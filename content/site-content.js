@@ -97,6 +97,6 @@ window.SITE_CONTENT = {
   contact: {
     headline: "Ready to talk through a sales hire or career move?",
     copy:
-      "Send a quick note with the role, market, timeline, or kind of opportunity you have in mind.",
+      "Reach out directly with the role, market, timeline, or kind of opportunity you have in mind.",
   },
 };

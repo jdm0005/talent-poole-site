@@ -36,16 +36,23 @@
 
   const email = content.agency && content.agency.email;
   const phone = content.agency && content.agency.phone;
-  const emailLink = document.querySelector("[data-email-link]");
-  if (email && emailLink) {
-    emailLink.href = `mailto:${email}`;
-    emailLink.textContent = email;
+  if (email) {
+    document.querySelectorAll("[data-email-link]").forEach((emailLink) => {
+      emailLink.href = `mailto:${email}`;
+      emailLink.textContent = email;
+    });
   }
 
-  const phoneLink = document.querySelector("[data-phone-link]");
-  if (phone && phoneLink) {
-    phoneLink.href = "tel:+14043689648";
-    phoneLink.textContent = phone;
+  if (phone) {
+    document.querySelectorAll("[data-phone-link]").forEach((phoneLink) => {
+      phoneLink.href = "tel:+14043689648";
+      phoneLink.textContent = phone;
+    });
+  }
+
+  const emailCta = document.querySelector("[data-email-cta]");
+  if (email && emailCta) {
+    emailCta.href = `mailto:${email}`;
   }
 
   setOptionalLink("[data-linkedin-link]", content.agency && content.agency.linkedin);
@@ -71,24 +78,6 @@
     });
   }
 
-  const contactForm = document.querySelector("[data-contact-form]");
-  if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const formData = new FormData(contactForm);
-      const recipient = email || "hello@example.com";
-      const name = formData.get("name") || "";
-      const senderEmail = formData.get("email") || "";
-      const type = formData.get("type") || "";
-      const message = formData.get("message") || "";
-      const subject = encodeURIComponent(`Website inquiry from ${name}`);
-      const body = encodeURIComponent(
-        `Name: ${name}\nEmail: ${senderEmail}\nType: ${type}\n\n${message}`,
-      );
-      window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
-    });
-  }
-
   function escapeHtml(value) {
     return String(value)
       .replaceAll("&", "&amp;")
@@ -99,14 +88,14 @@
   }
 
   function setOptionalLink(selector, href) {
-    const link = document.querySelector(selector);
-    if (!link) return;
-    if (href) {
-      link.href = href;
-      link.rel = "noreferrer";
-      link.target = "_blank";
-      return;
-    }
-    link.remove();
+    document.querySelectorAll(selector).forEach((link) => {
+      if (href) {
+        link.href = href;
+        link.rel = "noreferrer";
+        link.target = "_blank";
+        return;
+      }
+      link.remove();
+    });
   }
 })();

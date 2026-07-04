@@ -86,45 +86,10 @@ Pick the closest direction:
 - Social profile images:
 - Any launch post copy we can reuse:
 
-## Client Portal Placeholder
+## Client Portal Decision
 
-- Header includes a `Client Portal` button.
-- Current URL: `client-portal.html`.
-- Current page is a static demo mock only, using sample/fictitious search and candidate data.
-- Future scaffold should define users, auth, client access model, active searches, candidate pipeline/status, shared documents, and notification workflow before adding functionality.
-- Architecture direction from Jay/Telemachus discussion on 2026-07-04:
-  - Static mock portal first is fine without Supabase.
-  - Real portal should use Supabase or equivalent once it needs login/auth, client-specific searches, candidate lists/statuses, notes/feedback, resumes/files, audit trail, or notifications.
-  - Supabase is the likely default because it provides Postgres, auth, storage, and row-level security.
-  - RLS is mandatory before real client use so each client only sees its own searches/candidates.
-
-### Static Mock Portal Scope
-
-Recommended first mock scope:
-
-- Fake client login screen.
-- Client dashboard with active searches.
-- Search detail page.
-- Candidate pipeline/status view.
-- Candidate profile cards.
-- Placeholder feedback actions: interested, pass, needs discussion.
-- Shared document/resume links as placeholders.
-- Simple activity/update feed.
-
-Explicitly out of scope for static mock:
-
-- Real auth.
-- Real database.
-- Messaging/chat.
-- Automated emails.
-- Calendar scheduling.
-- Candidate-facing portal.
-- Admin back office.
-- Payments, contracts, or invoicing.
-
-Open scope questions:
-
-- Is the portal mainly for clients to review candidates, or also to track search progress?
-- Should clients be able to give candidate feedback directly?
-- Should the portal feel like a polished client dashboard or a simple shared workspace?
-- Candidate/search statuses to use. Starting guess: Sourced, Contacted, Screened, Submitted, Interviewing, Offer, Placed, Passed.
+- Jay decided on 2026-07-04 to bail on the client portal for now.
+- The public site should remain a single-page brochure site.
+- The previous `Client Portal` navigation/button and `client-portal.html` mock were removed.
+- Use Lucy's email signature/contact card details on the main site instead.
+- If the portal idea comes back later, define scope first before adding Supabase, auth, candidate data, or private client content.

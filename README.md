@@ -32,12 +32,6 @@ Behavior lives here:
 script.js
 ```
 
-Static client portal mock:
-
-```text
-client-portal.html
-```
-
 ## Run Locally
 
 From this folder:
@@ -85,7 +79,7 @@ No database, build step, or paid hosting is required.
 3. Commit and push to GitHub.
 4. Vercel will publish the latest version from the connected GitHub repo.
 
-The `Client Portal` button currently points to a static mock with sample data. Build the real portal there when requirements are ready.
+The site is intentionally back to a single public brochure page. Do not add a client portal unless Jay or Lucy explicitly revives that scope.
 
 ## Next Content To Gather
 
@@ -101,8 +95,6 @@ The `Client Portal` button currently points to a static mock with sample data. B
 
 Known reference links are tracked in `docs/content-brief.md`.
 
-## Contact Form
+## Contact
 
-The form currently opens the visitor's email app using `mailto:`.
-
-That is deliberate for the first version. If the site needs real form submissions later, add Netlify Forms, Formspree, or a small serverless endpoint.
+The contact section uses Lucy's signature details as a static contact card with direct email, phone, and LinkedIn links. If the site needs real form submissions later, add Netlify Forms, Formspree, or a small serverless endpoint.

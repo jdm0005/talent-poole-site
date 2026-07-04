@@ -26,7 +26,7 @@ Current placeholder direction:
 
 - Professional, direct, boutique recruiting
 - Clear and credible rather than trendy
-- Palette uses deep ink, green, coral, and gold accents
+- Palette uses deep navy, warm cream, target blue, and muted gold from the public launch graphic
 - Rectangular 8px-radius elements, no overly rounded SaaS bubbles
 
 Update this file when the real agency positioning, niche, and brand preferences are known.
@@ -66,6 +66,6 @@ Repo:
 https://github.com/jdm0005/talent-poole-site
 ```
 
-Keep the site static unless the owner explicitly asks for forms, a CMS, job listings, or private content.
+Keep the site static unless the owner explicitly asks for forms, a CMS, job listings, a client portal, or private content.
 
 Planned custom domain: `talentpoolepartners.com`, pending DNS/domain access.
