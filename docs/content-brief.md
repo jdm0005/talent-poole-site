@@ -89,3 +89,8 @@ Pick the closest direction:
 - Current URL: `client-portal.html`.
 - Current page is a coming-soon placeholder only.
 - Future scaffold should define users, auth, client access model, active searches, candidate pipeline/status, shared documents, and notification workflow before adding functionality.
+- Architecture direction from Jay/Telemachus discussion on 2026-07-04:
+  - Static mock portal first is fine without Supabase.
+  - Real portal should use Supabase or equivalent once it needs login/auth, client-specific searches, candidate lists/statuses, notes/feedback, resumes/files, audit trail, or notifications.
+  - Supabase is the likely default because it provides Postgres, auth, storage, and row-level security.
+  - RLS is mandatory before real client use so each client only sees its own searches/candidates.
