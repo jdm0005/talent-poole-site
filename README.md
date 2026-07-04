@@ -82,13 +82,16 @@ No database, build step, or paid hosting is required.
 ## Next Content To Gather
 
 - Exact legal/brand name
-- Domain name
+- Domain access for `talentpoolepartners.com`
 - Recruiting niche or target industries
 - Founder bio and headshot
 - Real email address and phone number
-- LinkedIn profile URL
+- LinkedIn/company profile details
+- Instagram/social launch copy or assets
 - Any client/candidate proof points she can publicly use
 - Preferred tone: polished corporate, warm boutique, niche expert, or something else
+
+Known reference links are tracked in `docs/content-brief.md`.
 
 ## Contact Form
 

@@ -31,6 +31,8 @@ Current placeholder direction:
 
 Update this file when the real agency positioning, niche, and brand preferences are known.
 
+Known reference links live in `docs/content-brief.md`. Do not scrape or reuse social copy blindly; use it as context and confirm final public copy with Jay/founder.
+
 ## Handoff Notes
 
 For a future Claude Code session, start by reading:
@@ -65,3 +67,5 @@ https://github.com/jdm0005/talent-poole-site
 ```
 
 Keep the site static unless the owner explicitly asks for forms, a CMS, job listings, or private content.
+
+Planned custom domain: `talentpoolepartners.com`, pending DNS/domain access.
