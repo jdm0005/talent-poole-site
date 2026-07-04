@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Talent Poole Recruiting</title>
+    <meta
+      name="description"
+      content="A focused recruiting partner connecting growing companies with practical, high-fit talent."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Talent Poole home">
+        <span class="brand-mark">TP</span>
+        <span data-content="agency.name">Talent Poole</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links" data-nav>
+        <a href="#employers">Employers</a>
+        <a href="#candidates">Candidates</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" role="img" aria-label="Professional team discussion in a modern office"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-content="agency.tagline">Recruiting with judgment, speed, and follow-through</p>
+          <h1 data-content="hero.headline">Find the right people before the wrong hire gets expensive.</h1>
+          <p class="hero-copy" data-content="hero.copy">
+            Talent Poole helps growing companies hire practical, high-fit talent while giving candidates a clear, honest path to better opportunities.
+          </p>
+          <div class="button-row">
+            <a class="button primary" href="#contact" data-content="hero.primaryCta">Start a search</a>
+            <a class="button secondary" href="#candidates" data-content="hero.secondaryCta">Explore opportunities</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band">
+        <div class="section-inner intro-grid">
+          <div>
+            <p class="section-kicker">Positioning</p>
+            <h2 data-content="intro.headline">A recruiting partner built for focused, relationship-led searches.</h2>
+          </div>
+          <p data-content="intro.copy">
+            This first version is intentionally lean: strong credibility, clear paths for employers and candidates, and simple copy your sister can keep improving as the business sharpens.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="employers">
+        <div class="section-inner two-column">
+          <div>
+            <p class="section-kicker">For Employers</p>
+            <h2 data-content="employers.headline">Hire with a clearer read on fit.</h2>
+            <p data-content="employers.copy">
+              From intake through offer, Talent Poole helps define the role, surface qualified candidates, and keep the process moving without making hiring managers wade through noise.
+            </p>
+          </div>
+          <div class="feature-list" data-list="employers.points"></div>
+        </div>
+      </section>
+
+      <section class="section muted" id="candidates">
+        <div class="section-inner two-column reverse">
+          <div class="profile-panel">
+            <p class="stat" data-content="candidates.stat">Confidential, direct, human.</p>
+            <p data-content="candidates.statCopy">
+              Good recruiting should feel like informed guidance, not getting shoveled into a database.
+            </p>
+          </div>
+          <div>
+            <p class="section-kicker">For Candidates</p>
+            <h2 data-content="candidates.headline">Move toward roles that actually fit.</h2>
+            <p data-content="candidates.copy">
+              Candidates get honest conversations, thoughtful matching, and clear communication about process, expectations, and next steps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="section-inner about-layout">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2 data-content="about.headline">Independent recruiting with ownership in the outcome.</h2>
+          </div>
+          <div>
+            <p data-content="about.copy">
+              Replace this section with her background, recruiting experience, industry knowledge, and the reason she started the agency. Specifics will beat generic polish every time.
+            </p>
+            <div class="service-grid" data-list="services"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-inner contact-grid">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 data-content="contact.headline">Ready to talk through a search or a career move?</h2>
+            <p data-content="contact.copy">
+              Send a quick note with the role, market, timeline, or kind of opportunity you have in mind.
+            </p>
+          </div>
+          <form class="contact-form" data-contact-form>
+            <label>
+              Name
+              <input name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              I am a...
+              <select name="type">
+                <option>Hiring manager</option>
+                <option>Candidate</option>
+                <option>Referral partner</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Send message</button>
+            <p class="form-note">
+              This opens your email app for now. Add a form service later if the site needs direct submissions.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-inner footer-inner">
+        <p><span data-content="agency.name">Talent Poole</span> <span data-year></span></p>
+        <a data-email-link href="mailto:hello@example.com">hello@example.com</a>
+      </div>
+    </footer>
+
+    <script src="./content/site-content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
