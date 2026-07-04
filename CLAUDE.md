@@ -44,7 +44,7 @@ Then ask what content or visual change is desired.
 
 ## Deployment
 
-Current primary deployment target: Vercel, connected to the GitHub repo.
+Current deployment target: Vercel.
 
 Production site:
 
@@ -62,12 +62,6 @@ Repo:
 
 ```text
 https://github.com/jdm0005/talent-poole-site
-```
-
-GitHub Pages fallback:
-
-```text
-https://jdm0005.github.io/talent-poole-site/
 ```
 
 Keep the site static unless the owner explicitly asks for forms, a CMS, job listings, or private content.

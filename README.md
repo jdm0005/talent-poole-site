@@ -50,7 +50,7 @@ You can also open `index.html` directly in a browser, but the local server is cl
 
 ## Deploy
 
-This first version is deployed with Vercel and connected to the GitHub repo.
+This first version is deployed with Vercel.
 
 Production site:
 
@@ -70,12 +70,6 @@ Project repo:
 https://github.com/jdm0005/talent-poole-site
 ```
 
-GitHub Pages fallback:
-
-```text
-https://jdm0005.github.io/talent-poole-site/
-```
-
 No database, build step, or paid hosting is required.
 
 ## Handoff Workflow
@@ -84,8 +78,6 @@ No database, build step, or paid hosting is required.
 2. Edit `content/site-content.js` for normal copy changes.
 3. Commit and push to GitHub.
 4. Vercel will publish the latest version from the connected GitHub repo.
-
-GitHub Pages is also enabled as a backup static host.
 
 ## Next Content To Gather
 
