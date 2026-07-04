@@ -50,24 +50,31 @@ You can also open `index.html` directly in a browser, but the local server is cl
 
 ## Deploy
 
-This first version is deployed with GitHub Pages because it is a plain static site.
+This first version is deployed with Vercel and connected to the GitHub repo.
 
-Expected project repo:
+Production site:
+
+```text
+https://talent-poole-site.vercel.app/
+```
+
+Vercel project:
+
+```text
+https://vercel.com/jay-mcdaniels-projects/talent-poole-site
+```
+
+Project repo:
 
 ```text
 https://github.com/jdm0005/talent-poole-site
 ```
 
-Expected public site:
+GitHub Pages fallback:
 
 ```text
 https://jdm0005.github.io/talent-poole-site/
 ```
-
-Other good low-maintenance options later:
-
-- Vercel: best if the site becomes a GitHub-connected preview workflow
-- Netlify: excellent if the site needs simple hosted forms
 
 No database, build step, or paid hosting is required.
 
@@ -76,7 +83,9 @@ No database, build step, or paid hosting is required.
 1. Open the folder in VS Code or Claude Code.
 2. Edit `content/site-content.js` for normal copy changes.
 3. Commit and push to GitHub.
-4. GitHub Pages will publish the latest version from the `main` branch.
+4. Vercel will publish the latest version from the connected GitHub repo.
+
+GitHub Pages is also enabled as a backup static host.
 
 ## Next Content To Gather
 

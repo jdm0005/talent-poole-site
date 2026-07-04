@@ -44,15 +44,27 @@ Then ask what content or visual change is desired.
 
 ## Deployment
 
-Current deployment target: GitHub Pages from the `main` branch.
+Current primary deployment target: Vercel, connected to the GitHub repo.
 
-Expected repo:
+Production site:
+
+```text
+https://talent-poole-site.vercel.app/
+```
+
+Vercel project:
+
+```text
+https://vercel.com/jay-mcdaniels-projects/talent-poole-site
+```
+
+Repo:
 
 ```text
 https://github.com/jdm0005/talent-poole-site
 ```
 
-Expected site:
+GitHub Pages fallback:
 
 ```text
 https://jdm0005.github.io/talent-poole-site/
