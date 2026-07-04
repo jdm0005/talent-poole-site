@@ -32,7 +32,7 @@ Behavior lives here:
 script.js
 ```
 
-Client portal placeholder:
+Static client portal mock:
 
 ```text
 client-portal.html
@@ -85,7 +85,7 @@ No database, build step, or paid hosting is required.
 3. Commit and push to GitHub.
 4. Vercel will publish the latest version from the connected GitHub repo.
 
-The `Client Portal` button currently points to a placeholder page. Build the real portal there when requirements are ready.
+The `Client Portal` button currently points to a static mock with sample data. Build the real portal there when requirements are ready.
 
 ## Next Content To Gather
 
@@ -93,7 +93,7 @@ The `Client Portal` button currently points to a placeholder page. Build the rea
 - Domain access for `talentpoolepartners.com`
 - Recruiting niche or target industries
 - Founder bio and headshot
-- Real email address and phone number
+- Confirm email address and phone number from Lucy's signature
 - LinkedIn/company profile details
 - Original logo/brand files
 - Any client/candidate proof points she can publicly use

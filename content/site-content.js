@@ -1,8 +1,9 @@
 window.SITE_CONTENT = {
   agency: {
     name: "Talent Poole Partners",
-    tagline: "Sales recruiting with judgment, focus, and follow-through",
-    email: "hello@talentpoolepartners.com",
+    tagline: "Building Momentum for Revenue Teams",
+    email: "lucy@talentpoolepartners.com",
+    phone: "(404) 368-9648",
     location: "Birmingham, Alabama",
     linkedin: "https://www.linkedin.com/company/talent-poole-partners/",
   },
@@ -96,6 +97,6 @@ window.SITE_CONTENT = {
   contact: {
     headline: "Ready to talk through a sales hire or career move?",
     copy:
-      "Send a quick note with the role, market, timeline, or kind of opportunity you have in mind. If email is still being configured, use the LinkedIn link below.",
+      "Send a quick note with the role, market, timeline, or kind of opportunity you have in mind.",
   },
 };

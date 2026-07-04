@@ -6,7 +6,7 @@
     <title>Client Portal | Talent Poole Partners</title>
     <meta
       name="description"
-      content="Client portal placeholder for Talent Poole Partners."
+      content="Static client portal mock for Talent Poole Partners candidate searches."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -19,21 +19,165 @@
         <span>Talent Poole Partners</span>
       </a>
       <nav class="nav-links portal-nav">
-        <a href="./index.html#employers">Employers</a>
-        <a href="./index.html#candidates">Candidates</a>
-        <a href="./index.html#contact">Contact</a>
+        <a href="./index.html">Home</a>
+        <a href="mailto:lucy@talentpoolepartners.com">Contact Lucy</a>
       </nav>
     </header>
 
-    <main class="portal-shell">
-      <section class="portal-hero">
-        <p class="eyebrow">Client Portal</p>
-        <h1>Coming soon.</h1>
-        <p>
-          This will become the client workspace for active searches, candidate updates,
-          and shared recruiting materials.
-        </p>
-        <a class="button primary" href="./index.html#contact">Talk to Talent Poole Partners</a>
+    <main class="portal-app">
+      <section class="portal-login-panel" aria-label="Demo login">
+        <div>
+          <p class="eyebrow">Client Portal</p>
+          <h1>Candidate search workspace.</h1>
+          <p>
+            A sample view for clients to track active searches, review shortlists,
+            and respond to candidate updates.
+          </p>
+        </div>
+        <div class="login-card">
+          <label>
+            Email
+            <input type="email" value="client@example.com" aria-label="Email" readonly />
+          </label>
+          <label>
+            Password
+            <input type="password" value="samplepassword" aria-label="Password" readonly />
+          </label>
+          <a class="button primary" href="#portal-dashboard">View Demo Portal</a>
+        </div>
+      </section>
+
+      <section class="portal-dashboard" id="portal-dashboard" aria-label="Demo client dashboard">
+        <div class="portal-heading">
+          <div>
+            <p class="section-kicker">Active Searches</p>
+            <h2>Revenue roles in motion.</h2>
+          </div>
+          <div class="portal-summary">
+            <span>3 active searches</span>
+            <span>8 candidates in review</span>
+            <span>2 interviews this week</span>
+          </div>
+        </div>
+
+        <div class="search-grid">
+          <article class="search-card is-active">
+            <span class="status-pill">Priority</span>
+            <h3>Director of Sales</h3>
+            <p>Enterprise SaaS growth role with regional team leadership.</p>
+            <div class="metric-row">
+              <span><strong>4</strong> submitted</span>
+              <span><strong>2</strong> interviewing</span>
+            </div>
+          </article>
+          <article class="search-card">
+            <span class="status-pill neutral">Mapping</span>
+            <h3>Account Executive</h3>
+            <p>New-logo seller with demonstrated mid-market prospecting.</p>
+            <div class="metric-row">
+              <span><strong>18</strong> sourced</span>
+              <span><strong>5</strong> screened</span>
+            </div>
+          </article>
+          <article class="search-card">
+            <span class="status-pill soft">Pipeline</span>
+            <h3>Customer Success Lead</h3>
+            <p>Commercial account retention and expansion leadership.</p>
+            <div class="metric-row">
+              <span><strong>9</strong> contacted</span>
+              <span><strong>3</strong> warm</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="portal-workspace">
+          <section class="pipeline-panel" aria-label="Candidate pipeline">
+            <div class="panel-header">
+              <div>
+                <p class="section-kicker">Director of Sales</p>
+                <h2>Candidate review</h2>
+              </div>
+              <span class="status-pill">Updated today</span>
+            </div>
+
+            <div class="pipeline-board">
+              <article class="candidate-card">
+                <span class="candidate-stage">Submitted</span>
+                <h3>Profile A</h3>
+                <p>Sales leader with multi-state team experience and strong enterprise motion.</p>
+                <div class="candidate-meta">
+                  <span>Atlanta</span>
+                  <span>12 yrs</span>
+                  <span>$185k target</span>
+                </div>
+                <div class="feedback-row">
+                  <button type="button">Interested</button>
+                  <button type="button">Pass</button>
+                  <button type="button">Discuss</button>
+                </div>
+              </article>
+
+              <article class="candidate-card">
+                <span class="candidate-stage">Interviewing</span>
+                <h3>Profile B</h3>
+                <p>Builder profile with recent history scaling a territory from zero.</p>
+                <div class="candidate-meta">
+                  <span>Birmingham</span>
+                  <span>9 yrs</span>
+                  <span>$165k target</span>
+                </div>
+                <div class="feedback-row">
+                  <button type="button">Interested</button>
+                  <button type="button">Pass</button>
+                  <button type="button">Discuss</button>
+                </div>
+              </article>
+
+              <article class="candidate-card">
+                <span class="candidate-stage">Screened</span>
+                <h3>Profile C</h3>
+                <p>Polished commercial seller with strong process discipline and coachability.</p>
+                <div class="candidate-meta">
+                  <span>Nashville</span>
+                  <span>7 yrs</span>
+                  <span>$145k target</span>
+                </div>
+                <div class="feedback-row">
+                  <button type="button">Interested</button>
+                  <button type="button">Pass</button>
+                  <button type="button">Discuss</button>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <aside class="activity-panel" aria-label="Search activity and documents">
+            <section>
+              <p class="section-kicker">Activity</p>
+              <ol class="activity-list">
+                <li>
+                  <strong>Profile B interview confirmed</strong>
+                  <span>Tuesday at 10:30 AM</span>
+                </li>
+                <li>
+                  <strong>Profile C screen completed</strong>
+                  <span>Lucy recommends client review</span>
+                </li>
+                <li>
+                  <strong>Market map refreshed</strong>
+                  <span>5 new targets added</span>
+                </li>
+              </ol>
+            </section>
+
+            <section class="document-list">
+              <p class="section-kicker">Shared Materials</p>
+              <span>Role scorecard.pdf</span>
+              <span>Candidate comparison.xlsx</span>
+              <span>Weekly search brief.pdf</span>
+            </section>
+          </aside>
+        </div>
       </section>
     </main>
   </body>

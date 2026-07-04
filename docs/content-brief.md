@@ -7,11 +7,13 @@ Use this to collect the real business details before replacing placeholder copy.
 - Agency name: Talent Poole Partners
 - Domain: https://www.talentpoolepartners.com/
 - Founder name: Lucy Poole
-- Email:
-- Phone:
+- Founder title: Principal
+- Email: lucy@talentpoolepartners.com
+- Phone: (404) 368-9648
 - LinkedIn: https://www.linkedin.com/company/talent-poole-partners/
 - Instagram launch/reference post: https://www.instagram.com/p/DaAyISaROPx/
 - City/region: Birmingham, Alabama
+- Signature tagline: Building Momentum for Revenue Teams
 
 ## Domain Notes
 
@@ -34,7 +36,8 @@ Use this to collect the real business details before replacing placeholder copy.
 - The live copy now uses Talent Poole Partners as the brand name.
 - The live copy positions the firm around sales recruiting and revenue-critical hires.
 - The live copy references Lucy Poole and Birmingham, Alabama.
-- These assumptions should be confirmed with Lucy before custom-domain launch.
+- Lucy's email signature provided by Jay on 2026-07-04 is the current source of truth for her title, email, phone, and tagline.
+- Remaining assumptions should be confirmed with Lucy before custom-domain launch.
 
 ## Competitive / Inspiration Notes
 
@@ -87,7 +90,7 @@ Pick the closest direction:
 
 - Header includes a `Client Portal` button.
 - Current URL: `client-portal.html`.
-- Current page is a coming-soon placeholder only.
+- Current page is a static demo mock only, using sample/fictitious search and candidate data.
 - Future scaffold should define users, auth, client access model, active searches, candidate pipeline/status, shared documents, and notification workflow before adding functionality.
 - Architecture direction from Jay/Telemachus discussion on 2026-07-04:
   - Static mock portal first is fine without Supabase.

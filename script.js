@@ -35,10 +35,17 @@
   });
 
   const email = content.agency && content.agency.email;
+  const phone = content.agency && content.agency.phone;
   const emailLink = document.querySelector("[data-email-link]");
   if (email && emailLink) {
     emailLink.href = `mailto:${email}`;
     emailLink.textContent = email;
+  }
+
+  const phoneLink = document.querySelector("[data-phone-link]");
+  if (phone && phoneLink) {
+    phoneLink.href = "tel:+14043689648";
+    phoneLink.textContent = phone;
   }
 
   setOptionalLink("[data-linkedin-link]", content.agency && content.agency.linkedin);
