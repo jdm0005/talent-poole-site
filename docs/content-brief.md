@@ -94,3 +94,34 @@ Pick the closest direction:
   - Real portal should use Supabase or equivalent once it needs login/auth, client-specific searches, candidate lists/statuses, notes/feedback, resumes/files, audit trail, or notifications.
   - Supabase is the likely default because it provides Postgres, auth, storage, and row-level security.
   - RLS is mandatory before real client use so each client only sees its own searches/candidates.
+
+### Static Mock Portal Scope
+
+Recommended first mock scope:
+
+- Fake client login screen.
+- Client dashboard with active searches.
+- Search detail page.
+- Candidate pipeline/status view.
+- Candidate profile cards.
+- Placeholder feedback actions: interested, pass, needs discussion.
+- Shared document/resume links as placeholders.
+- Simple activity/update feed.
+
+Explicitly out of scope for static mock:
+
+- Real auth.
+- Real database.
+- Messaging/chat.
+- Automated emails.
+- Calendar scheduling.
+- Candidate-facing portal.
+- Admin back office.
+- Payments, contracts, or invoicing.
+
+Open scope questions:
+
+- Is the portal mainly for clients to review candidates, or also to track search progress?
+- Should clients be able to give candidate feedback directly?
+- Should the portal feel like a polished client dashboard or a simple shared workspace?
+- Candidate/search statuses to use. Starting guess: Sourced, Contacted, Screened, Submitted, Interviewing, Offer, Placed, Passed.
