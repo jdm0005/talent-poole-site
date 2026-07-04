@@ -32,6 +32,12 @@ Behavior lives here:
 script.js
 ```
 
+Client portal placeholder:
+
+```text
+client-portal.html
+```
+
 ## Run Locally
 
 From this folder:
@@ -78,6 +84,8 @@ No database, build step, or paid hosting is required.
 2. Edit `content/site-content.js` for normal copy changes.
 3. Commit and push to GitHub.
 4. Vercel will publish the latest version from the connected GitHub repo.
+
+The `Client Portal` button currently points to a placeholder page. Build the real portal there when requirements are ready.
 
 ## Next Content To Gather
 

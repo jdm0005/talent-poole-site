@@ -82,3 +82,10 @@ Pick the closest direction:
 - Headshot:
 - Social profile images:
 - Any launch post copy we can reuse:
+
+## Client Portal Placeholder
+
+- Header includes a `Client Portal` button.
+- Current URL: `client-portal.html`.
+- Current page is a coming-soon placeholder only.
+- Future scaffold should define users, auth, client access model, active searches, candidate pipeline/status, shared documents, and notification workflow before adding functionality.

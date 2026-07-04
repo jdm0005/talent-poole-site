@@ -100,6 +100,23 @@ textarea {
   color: var(--blue-dark);
 }
 
+.nav-links .portal-link {
+  align-items: center;
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 8px;
+  color: var(--cream);
+  display: inline-flex;
+  min-height: 38px;
+  padding: 8px 13px;
+}
+
+.nav-links .portal-link:hover {
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
+  color: #fff;
+}
+
 .nav-toggle {
   background: transparent;
   border: 0;
@@ -499,6 +516,41 @@ p {
 .site-footer {
   background: #051120;
   color: rgba(244, 239, 228, 0.72);
+}
+
+.portal-page {
+  background:
+    radial-gradient(circle at 76% 20%, rgba(31, 148, 207, 0.16), transparent 30%),
+    linear-gradient(135deg, var(--paper), var(--soft));
+  min-height: 100vh;
+}
+
+.portal-shell {
+  align-items: center;
+  display: grid;
+  min-height: 100vh;
+  padding: 116px clamp(20px, 5vw, 72px) 56px;
+}
+
+.portal-hero {
+  background: rgba(255, 250, 240, 0.82);
+  border: 1px solid rgba(216, 221, 223, 0.84);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  max-width: 760px;
+  padding: clamp(28px, 6vw, 58px);
+}
+
+.portal-hero h1 {
+  color: var(--ink);
+  font-size: clamp(2.8rem, 7vw, 6rem);
+}
+
+.portal-hero p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+  margin: 22px 0 30px;
+  max-width: 590px;
 }
 
 .footer-inner {
