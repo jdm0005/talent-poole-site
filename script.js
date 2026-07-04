@@ -41,6 +41,9 @@
     emailLink.textContent = email;
   }
 
+  setOptionalLink("[data-linkedin-link]", content.agency && content.agency.linkedin);
+  setOptionalLink("[data-instagram-link]", content.agency && content.agency.instagram);
+
   const yearElement = document.querySelector("[data-year]");
   if (yearElement) {
     yearElement.textContent = `© ${new Date().getFullYear()}`;
@@ -87,5 +90,17 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#039;");
+  }
+
+  function setOptionalLink(selector, href) {
+    const link = document.querySelector(selector);
+    if (!link) return;
+    if (href) {
+      link.href = href;
+      link.rel = "noreferrer";
+      link.target = "_blank";
+      return;
+    }
+    link.remove();
   }
 })();

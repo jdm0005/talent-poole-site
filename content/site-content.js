@@ -1,77 +1,80 @@
 window.SITE_CONTENT = {
   agency: {
-    name: "Talent Poole",
-    tagline: "Recruiting with judgment, speed, and follow-through",
-    email: "hello@talentpoole.com",
+    name: "Talent Poole Partners",
+    tagline: "Sales recruiting with judgment, focus, and follow-through",
+    email: "hello@talentpoolepartners.com",
+    location: "Birmingham, Alabama",
+    linkedin: "https://www.linkedin.com/company/talent-poole-partners/",
+    instagram: "https://www.instagram.com/p/DaAyISaROPx/",
   },
   hero: {
-    headline: "Find the right people before the wrong hire gets expensive.",
+    headline: "Sales talent for companies ready to grow.",
     copy:
-      "Talent Poole helps growing companies hire practical, high-fit talent while giving candidates a clear, honest path to better opportunities.",
-    primaryCta: "Start a search",
-    secondaryCta: "Explore opportunities",
+      "Talent Poole Partners connects organizations with high-fit sales talent through a search process built on clear communication, practical judgment, and real follow-through.",
+    primaryCta: "Start a hiring conversation",
+    secondaryCta: "Connect as a candidate",
   },
   intro: {
-    headline: "A recruiting partner built for focused, relationship-led searches.",
+    headline: "A focused recruiting partner for revenue-critical hires.",
     copy:
-      "This first version is intentionally lean: strong credibility, clear paths for employers and candidates, and simple copy that can keep improving as the business sharpens.",
+      "Hiring well takes more than a stack of resumes. Talent Poole Partners helps companies define the need, understand the market, and move the right candidates through the process with care.",
   },
   employers: {
-    headline: "Hire with a clearer read on fit.",
+    headline: "Hire salespeople with a clearer read on fit.",
     copy:
-      "From intake through offer, Talent Poole helps define the role, surface qualified candidates, and keep the process moving without making hiring managers wade through noise.",
+      "From intake through offer, Talent Poole Partners helps hiring leaders clarify the role, surface qualified sales candidates, and keep momentum without forcing teams to sort through noise.",
     points: [
       {
-        title: "Focused intake",
+        title: "Role clarity before outreach",
         copy:
-          "Clarify the role, must-haves, market realities, and selling points before the search starts.",
+          "Align on must-haves, sales motion, market realities, compensation, and the story candidates need to hear.",
       },
       {
-        title: "Practical candidate screening",
+        title: "Targeted sales talent search",
         copy:
-          "Look beyond keywords to assess fit, motivation, communication, and likely performance.",
+          "Prioritize candidates with the right selling environment, motivation, communication style, and growth trajectory.",
       },
       {
-        title: "Consistent process management",
+        title: "Candidate stewardship",
         copy:
-          "Keep candidates engaged and hiring teams aligned from first conversation through offer.",
+          "Keep strong candidates engaged and hiring teams aligned from first conversation through offer.",
       },
     ],
   },
   candidates: {
-    headline: "Move toward roles that actually fit.",
+    headline: "Make your next sales move with more signal.",
     copy:
-      "Candidates get honest conversations, thoughtful matching, and clear communication about process, expectations, and next steps.",
-    stat: "Confidential, direct, human.",
+      "Sales professionals get honest conversations, thoughtful matching, and clear communication about the role, company, expectations, and process.",
+    stat: "Confidential, direct, human",
     statCopy:
-      "Good recruiting should feel like informed guidance, not getting shoveled into a database.",
+      "Good recruiting should feel like informed guidance, not getting pushed into whatever opening happens to be warm.",
   },
   about: {
-    headline: "Independent recruiting with ownership in the outcome.",
+    headline: "Founded by Lucy Poole to make hiring feel more human and more precise.",
     copy:
-      "Replace this section with her background, recruiting experience, industry knowledge, and the reason she started the agency. Specifics will beat generic polish every time.",
+      "Talent Poole Partners is a Birmingham-based recruiting firm focused on connecting organizations with top-tier sales talent. The work is personal, practical, and relationship-led, with attention paid to the company, the candidate, and the fit between the two.",
   },
   services: [
     {
-      title: "Permanent placement",
-      copy: "Direct-hire recruiting for roles where long-term fit matters.",
+      title: "Direct-hire sales recruiting",
+      copy: "Permanent placement for sales roles where performance, trust, and long-term fit matter.",
     },
     {
-      title: "Targeted searches",
-      copy: "Focused outreach for hard-to-find candidates in specific markets.",
+      title: "Targeted candidate outreach",
+      copy: "Focused search for candidates who may not be actively applying but are open to the right move.",
     },
     {
-      title: "Candidate representation",
-      copy: "Confidential support for professionals considering a smart move.",
+      title: "Confidential candidate guidance",
+      copy: "Clear conversations for sales professionals considering a better role, team, or growth path.",
     },
     {
       title: "Market feedback",
-      copy: "Clear signal on compensation, availability, and hiring friction.",
+      copy: "Practical signal on compensation, availability, role positioning, and process friction.",
     },
   ],
   contact: {
-    headline: "Ready to talk through a search or a career move?",
+    headline: "Ready to talk through a sales hire or career move?",
     copy:
-      "Send a quick note with the role, market, timeline, or kind of opportunity you have in mind.",
+      "Send a quick note with the role, market, timeline, or kind of opportunity you have in mind. If email is still being configured, use the LinkedIn link below.",
   },
 };

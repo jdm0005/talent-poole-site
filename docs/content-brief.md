@@ -4,14 +4,14 @@ Use this to collect the real business details before replacing placeholder copy.
 
 ## Basics
 
-- Agency name: Talent Poole Partners likely, pending confirmation from founder
+- Agency name: Talent Poole Partners
 - Domain: https://www.talentpoolepartners.com/
-- Founder name:
+- Founder name: Lucy Poole
 - Email:
 - Phone:
 - LinkedIn: https://www.linkedin.com/company/talent-poole-partners/
 - Instagram launch/reference post: https://www.instagram.com/p/DaAyISaROPx/
-- City/region:
+- City/region: Birmingham, Alabama
 
 ## Domain Notes
 
@@ -22,12 +22,19 @@ Use this to collect the real business details before replacing placeholder copy.
 
 ## Positioning
 
-- Recruiting niche:
+- Recruiting niche: Sales talent / revenue team recruiting, based on public LinkedIn search result for Lucy Poole.
 - Target industries:
-- Target roles:
+- Target roles: Sales roles, pending confirmation of exact levels/functions.
 - Typical client size:
 - Geographic market:
 - What makes the agency different:
+
+## Current Public-Site Assumptions
+
+- The live copy now uses Talent Poole Partners as the brand name.
+- The live copy positions the firm around sales recruiting and revenue-critical hires.
+- The live copy references Lucy Poole and Birmingham, Alabama.
+- These assumptions should be confirmed with Lucy before custom-domain launch.
 
 ## Employer Message
 

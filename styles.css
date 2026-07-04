@@ -76,7 +76,7 @@ textarea {
   height: 38px;
   justify-content: center;
   letter-spacing: 0;
-  width: 38px;
+  width: 46px;
 }
 
 .nav-links {
@@ -394,6 +394,13 @@ p {
   padding-top: 28px;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
 .footer-inner a:hover {
   color: #fff;
 }
@@ -457,6 +464,10 @@ p {
     align-items: flex-start;
     flex-direction: column;
     gap: 8px;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }
 
