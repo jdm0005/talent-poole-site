@@ -87,7 +87,7 @@ No database, build step, or paid hosting is required.
 - Founder bio and headshot
 - Real email address and phone number
 - LinkedIn/company profile details
-- Instagram/social launch copy or assets
+- Original logo/brand files
 - Any client/candidate proof points she can publicly use
 - Preferred tone: polished corporate, warm boutique, niche expert, or something else
 

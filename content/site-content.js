@@ -5,7 +5,6 @@ window.SITE_CONTENT = {
     email: "hello@talentpoolepartners.com",
     location: "Birmingham, Alabama",
     linkedin: "https://www.linkedin.com/company/talent-poole-partners/",
-    instagram: "https://www.instagram.com/p/DaAyISaROPx/",
   },
   hero: {
     headline: "Sales talent for companies ready to grow.",

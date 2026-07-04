@@ -69,8 +69,8 @@ Pick the closest direction:
 
 ## Asset Intake
 
-- Logo files:
-- Brand colors:
+- Logo files: Temporary site assets pulled from public Instagram launch post at `assets/talent-poole-social-logo.jpg`; cropped mark used in header at `assets/talent-poole-mark.jpg`. Still need original logo files from Lucy.
+- Brand colors: Current temporary palette is based on the public Instagram graphic: deep navy, warm cream, target blue, muted gold.
 - Fonts:
 - Headshot:
 - Social profile images:

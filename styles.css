@@ -1,15 +1,15 @@
 :root {
-  --ink: #172033;
-  --text: #2c3447;
-  --muted: #667085;
-  --line: #d9dee7;
-  --paper: #ffffff;
-  --soft: #f5f7fa;
-  --green: #1f7a5a;
-  --green-dark: #11543d;
-  --coral: #c65b47;
-  --gold: #d9a441;
-  --shadow: 0 24px 70px rgba(23, 32, 51, 0.14);
+  --ink: #07182d;
+  --text: #233248;
+  --muted: #66758a;
+  --line: #d8dddf;
+  --paper: #fffaf0;
+  --soft: #f4efe4;
+  --blue: #1f94cf;
+  --blue-dark: #0f6e9d;
+  --cream: #f4efe4;
+  --gold: #ddc785;
+  --shadow: 0 24px 70px rgba(7, 24, 45, 0.16);
   color-scheme: light;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -45,8 +45,8 @@ textarea {
 
 .site-header {
   align-items: center;
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid rgba(217, 222, 231, 0.75);
+  background: rgba(255, 250, 240, 0.93);
+  border-bottom: 1px solid rgba(216, 221, 223, 0.82);
   display: flex;
   height: 72px;
   justify-content: space-between;
@@ -69,14 +69,22 @@ textarea {
 
 .brand-mark {
   align-items: center;
-  background: var(--green);
+  background: var(--cream);
   border-radius: 8px;
-  color: #fff;
   display: inline-flex;
   height: 38px;
   justify-content: center;
-  letter-spacing: 0;
-  width: 46px;
+  overflow: hidden;
+  width: 38px;
+  box-shadow: inset 0 0 0 1px rgba(7, 24, 45, 0.12);
+}
+
+.brand-mark img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
 }
 
 .nav-links {
@@ -89,7 +97,7 @@ textarea {
 }
 
 .nav-links a:hover {
-  color: var(--green);
+  color: var(--blue-dark);
 }
 
 .nav-toggle {
@@ -126,7 +134,7 @@ textarea {
 
 .hero-media {
   background:
-    linear-gradient(90deg, rgba(14, 25, 43, 0.72), rgba(14, 25, 43, 0.2)),
+    linear-gradient(90deg, rgba(7, 24, 45, 0.78), rgba(7, 24, 45, 0.2)),
     url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=82")
       center / cover;
   transform: scale(1.02);
@@ -134,7 +142,7 @@ textarea {
 }
 
 .hero-overlay {
-  background: linear-gradient(0deg, rgba(23, 32, 51, 0.46), rgba(23, 32, 51, 0));
+  background: linear-gradient(0deg, rgba(7, 24, 45, 0.52), rgba(7, 24, 45, 0));
   z-index: -1;
 }
 
@@ -146,7 +154,7 @@ textarea {
 
 .eyebrow,
 .section-kicker {
-  color: var(--coral);
+  color: var(--blue-dark);
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -155,7 +163,7 @@ textarea {
 }
 
 .hero .eyebrow {
-  color: #f4c164;
+  color: var(--gold);
 }
 
 h1,
@@ -214,12 +222,12 @@ p {
 }
 
 .button.primary {
-  background: var(--green);
+  background: var(--blue);
   color: #fff;
 }
 
 .button.primary:hover {
-  background: var(--green-dark);
+  background: var(--blue-dark);
 }
 
 .button.secondary {
@@ -230,7 +238,7 @@ p {
 
 .intro-band {
   background: var(--ink);
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(244, 239, 228, 0.84);
 }
 
 .section-inner {
@@ -260,7 +268,7 @@ p {
 }
 
 .section {
-  background: #fff;
+  background: var(--paper);
 }
 
 .section.muted {
@@ -287,7 +295,7 @@ p {
 
 .feature-item,
 .service-card {
-  background: #fff;
+  background: rgba(255, 250, 240, 0.9);
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 22px;
@@ -335,11 +343,11 @@ p {
 
 .contact-section {
   background: var(--ink);
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(244, 239, 228, 0.78);
 }
 
 .contact-form {
-  background: #fff;
+  background: var(--paper);
   border-radius: 8px;
   box-shadow: var(--shadow);
   color: var(--text);
@@ -372,8 +380,8 @@ p {
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-  border-color: var(--green);
-  outline: 3px solid rgba(31, 122, 90, 0.15);
+  border-color: var(--blue);
+  outline: 3px solid rgba(31, 148, 207, 0.16);
 }
 
 .form-note {
@@ -382,8 +390,8 @@ p {
 }
 
 .site-footer {
-  background: #0f1726;
-  color: rgba(255, 255, 255, 0.72);
+  background: #051120;
+  color: rgba(244, 239, 228, 0.72);
 }
 
 .footer-inner {

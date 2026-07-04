@@ -42,7 +42,6 @@
   }
 
   setOptionalLink("[data-linkedin-link]", content.agency && content.agency.linkedin);
-  setOptionalLink("[data-instagram-link]", content.agency && content.agency.instagram);
 
   const yearElement = document.querySelector("[data-year]");
   if (yearElement) {
