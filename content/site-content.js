@@ -18,6 +18,28 @@ window.SITE_CONTENT = {
     copy:
       "Hiring well takes more than a stack of resumes. Talent Poole Partners helps companies define the need, understand the market, and move the right candidates through the process with care.",
   },
+  concerns: {
+    headline: "What sales leaders usually know before they call.",
+    copy:
+      "The role matters. The market is tight. The best candidates are rarely the ones refreshing job boards. Talent Poole Partners gives the search a clearer profile, a better target list, and a steadier process.",
+    points: [
+      {
+        title: "We know who we need. We just cannot reach them.",
+        copy:
+          "Targeted outreach gets beyond inbound applicants and into the conversations that do not happen through a job posting.",
+      },
+      {
+        title: "We cannot afford another expensive miss.",
+        copy:
+          "The search starts with fit: sales motion, motivation, communication style, compensation reality, and long-term potential.",
+      },
+      {
+        title: "Our internal team is already stretched.",
+        copy:
+          "Talent Poole Partners manages the search rhythm so hiring leaders can stay focused on the business.",
+      },
+    ],
+  },
   employers: {
     headline: "Hire salespeople with a clearer read on fit.",
     copy:

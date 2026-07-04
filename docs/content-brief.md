@@ -36,6 +36,13 @@ Use this to collect the real business details before replacing placeholder copy.
 - The live copy references Lucy Poole and Birmingham, Alabama.
 - These assumptions should be confirmed with Lucy before custom-domain launch.
 
+## Competitive / Inspiration Notes
+
+- Jay said Lucy's previous firm was `https://www.talnted.co/`.
+- Talnted is now positioned around producer recruiting for community and regional banks.
+- Use Talnted as directional inspiration for sharp problem/answer framing and disciplined recruiting-process language.
+- Do not copy Talnted's page, copy, or banking-only positioning. Talent Poole Partners should remain broader than bank recruiting unless Lucy says otherwise.
+
 ## Employer Message
 
 - What hiring problem does she solve best?
