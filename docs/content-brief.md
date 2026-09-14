@@ -93,3 +93,10 @@ Pick the closest direction:
 - The previous `Client Portal` navigation/button and `client-portal.html` mock were removed.
 - Use Lucy's email signature/contact card details on the main site instead.
 - If the portal idea comes back later, define scope first before adding Supabase, auth, candidate data, or private client content.
+
+## September 14 review notes
+
+- Simplified the public copy and removed unconfirmed direct-hire service and confidentiality promises. Retained the existing sales-recruiting positioning and signature contact facts.
+- Brand artwork remains the actual supplied/extracted JPEGs; no fabricated logo or stock founder portrait.
+- Domain observations above are historical (July 4), not a current DNS check. This release targets the existing Vercel hostname only.
+- Strongest future content upgrades: original logo files, Lucy’s approved headshot/bio, specific role/sector focus, and permissioned public proof points.

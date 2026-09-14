@@ -1,101 +1,53 @@
 (function () {
   const content = window.SITE_CONTENT || {};
-
-  function getValue(path) {
-    return path.split(".").reduce((value, key) => {
-      if (value && Object.prototype.hasOwnProperty.call(value, key)) {
-        return value[key];
-      }
-      return "";
-    }, content);
-  }
-
-  document.querySelectorAll("[data-content]").forEach((element) => {
+  const getValue = (path) => path.split('.').reduce((value, key) => value && Object.prototype.hasOwnProperty.call(value, key) ? value[key] : undefined, content);
+  document.querySelectorAll('[data-content]').forEach(element => {
     const value = getValue(element.dataset.content);
-    if (value) {
-      element.textContent = value;
-    }
+    if (typeof value === 'string') element.textContent = value;
   });
-
-  document.querySelectorAll("[data-list]").forEach((element) => {
+  document.querySelectorAll('[data-list]').forEach(element => {
     const items = getValue(element.dataset.list);
     if (!Array.isArray(items)) return;
-
-    element.innerHTML = items
-      .map((item) => {
-        const className = element.dataset.list === "services" ? "service-card" : "feature-item";
-        return `
-          <article class="${className}">
-            <h3>${escapeHtml(item.title)}</h3>
-            <p>${escapeHtml(item.copy)}</p>
-          </article>
-        `;
-      })
-      .join("");
+    element.replaceChildren(...items.map(item => {
+      const entry = document.createElement(element.tagName === 'OL' ? 'li' : 'article');
+      if (entry.tagName === 'ARTICLE') entry.className = 'feature-item';
+      const heading = document.createElement('h3'), paragraph = document.createElement('p');
+      heading.textContent = item.title; paragraph.textContent = item.copy;
+      entry.append(heading, paragraph); return entry;
+    }));
   });
-
-  const email = content.agency && content.agency.email;
-  const phone = content.agency && content.agency.phone;
-  if (email) {
-    document.querySelectorAll("[data-email-link]").forEach((emailLink) => {
-      emailLink.href = `mailto:${email}`;
-      emailLink.textContent = email;
+  const agency = content.agency || {};
+  if (agency.email) {
+    document.querySelectorAll('[data-email-link]').forEach(link => { link.href = `mailto:${agency.email}`; link.textContent = agency.email; });
+    document.querySelectorAll('[data-email-cta]').forEach(link => { link.href = `mailto:${agency.email}`; });
+    document.querySelectorAll('[data-email-intent]').forEach(link => {
+      const subject = getValue(`contact.${link.dataset.emailIntent}Subject`);
+      link.href = `mailto:${agency.email}${subject ? '?subject=' + encodeURIComponent(subject) : ''}`;
     });
   }
-
-  if (phone) {
-    document.querySelectorAll("[data-phone-link]").forEach((phoneLink) => {
-      phoneLink.href = "tel:+14043689648";
-      phoneLink.textContent = phone;
-    });
+  document.querySelectorAll('[data-phone-link]').forEach(link => { if (agency.phone) link.textContent = agency.phone; if (agency.phoneHref) link.href = agency.phoneHref; });
+  document.querySelectorAll('[data-linkedin-link]').forEach(link => { if (agency.linkedin) link.href = agency.linkedin; });
+  document.querySelectorAll('[data-year]').forEach(element => { element.textContent = new Date().getFullYear(); });
+  const toggle = document.querySelector('[data-nav-toggle]'), nav = document.querySelector('[data-nav]');
+  if (!toggle || !nav) return;
+  const mobile = window.matchMedia('(max-width: 860px)');
+  function setOpen(open, returnFocus = false) {
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    if (returnFocus) toggle.focus();
   }
-
-  const emailCta = document.querySelector("[data-email-cta]");
-  if (email && emailCta) {
-    emailCta.href = `mailto:${email}`;
-  }
-
-  setOptionalLink("[data-linkedin-link]", content.agency && content.agency.linkedin);
-
-  const yearElement = document.querySelector("[data-year]");
-  if (yearElement) {
-    yearElement.textContent = `© ${new Date().getFullYear()}`;
-  }
-
-  const navToggle = document.querySelector("[data-nav-toggle]");
-  const nav = document.querySelector("[data-nav]");
-  if (navToggle && nav) {
-    navToggle.addEventListener("click", () => {
-      const isOpen = nav.classList.toggle("is-open");
-      navToggle.setAttribute("aria-expanded", String(isOpen));
-    });
-
-    nav.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        nav.classList.remove("is-open");
-        navToggle.setAttribute("aria-expanded", "false");
-      });
-    });
-  }
-
-  function escapeHtml(value) {
-    return String(value)
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#039;");
-  }
-
-  function setOptionalLink(selector, href) {
-    document.querySelectorAll(selector).forEach((link) => {
-      if (href) {
-        link.href = href;
-        link.rel = "noreferrer";
-        link.target = "_blank";
-        return;
-      }
-      link.remove();
-    });
-  }
+  toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    setOpen(false);
+    if (!mobile.matches) return;
+    const destination = document.querySelector(link.getAttribute('href'));
+    if (destination) { destination.setAttribute('tabindex', '-1'); destination.focus({preventScroll:true}); }
+  }));
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') setOpen(false, true); });
+  document.addEventListener('click', event => { if (!event.target.closest('.site-header')) setOpen(false); });
+  document.addEventListener('focusin', event => { if (!event.target.closest('.site-header')) setOpen(false); });
+  mobile.addEventListener('change', () => setOpen(false));
+  toggle.hidden = false;
+  document.documentElement.classList.add('has-js');
 })();

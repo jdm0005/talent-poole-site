@@ -1,6 +1,6 @@
 # Talent Poole Website
 
-Static recruiting-agency website scaffold for Talent Poole.
+Static sales-recruiting brochure for Talent Poole Partners, founded by Lucy Poole in Birmingham, Alabama.
 
 The project is intentionally simple so it can be edited in VS Code, Claude Code, or any plain text editor without needing a full application framework.
 
@@ -12,7 +12,16 @@ Most text lives here:
 content/site-content.js
 ```
 
-Change the agency name, tagline, email, hero copy, employer/candidate sections, services, and contact text in that file.
+Change the agency name, tagline, email, phone, hero copy, employer/candidate sections, process, and contact text in that file. Set both `phone` (display) and `phoneHref` (international `tel:` URI).
+
+After copy changes, synchronize the complete static HTML fallback:
+
+```bash
+node scripts/sync-content.mjs
+node scripts/sync-content.mjs --check
+```
+
+This dependency-free maintenance helper is not a deployment build step. The page remains fully readable and navigable without JavaScript. Head metadata, section labels, and founder title also live in `index.html`; review those when changing business details.
 
 Visual styling lives here:
 
@@ -37,7 +46,7 @@ script.js
 From this folder:
 
 ```bash
-python3 -m http.server 5173
+python3 -m http.server 5173 --bind 127.0.0.1
 ```
 
 Then open:
@@ -75,11 +84,22 @@ No database, build step, or paid hosting is required.
 ## Handoff Workflow
 
 1. Open the folder in VS Code or Claude Code.
-2. Edit `content/site-content.js` for normal copy changes.
-3. Commit and push to GitHub.
+2. Edit `content/site-content.js` for normal copy changes and run `node scripts/sync-content.mjs`.
+3. Review desktop/mobile and run `node scripts/sync-content.mjs --check`; commit and push to GitHub.
 4. Vercel will publish the latest version from the connected GitHub repo.
 
 The site is intentionally back to a single public brochure page. Do not add a client portal unless Jay or Lucy explicitly revives that scope.
+
+## Project Memory
+
+Use these files for future project continuity:
+
+- `PRD.md` - durable scope, requirements, deployment, and open questions
+- `CLAUDE.md` - operating notes for future agent sessions
+- `CHANGELOG.md` - dated project changes
+- `docs/content-brief.md` - content intake and unresolved business details
+
+Daily session notes belong in `/Users/telemachus/clawd/memory/YYYY-MM-DD.md`; long-term cross-project memory should stay compact in `/Users/telemachus/clawd/MEMORY.md`.
 
 ## Next Content To Gather
 
