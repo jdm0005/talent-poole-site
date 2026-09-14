@@ -9,7 +9,8 @@
 - Fixed text contrast, mobile navigation disclosure/focus/Escape handling, skip navigation, anchor offsets, and reduced-motion behavior.
 - Added complete no-JavaScript content and navigation, with a dependency-free fallback synchronization helper.
 - Added canonical and social preview metadata using the current Vercel URL and existing logo.
-- Verified responsive layouts at nine widths, keyboard/contact behavior, no-JS mobile/desktop, text contrast, and error-free resource loading locally.
+- Verified responsive layouts at nine widths, keyboard/contact behavior, no-JS mobile/desktop, text contrast, and error-free resource loading locally and on Vercel production.
+- Published via GitHub → Vercel from `2336733`; production source matched local files byte-for-byte.
 
 ## 2026-07-09
 

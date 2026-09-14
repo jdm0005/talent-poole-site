@@ -125,4 +125,4 @@ Detailed open content questions live in `docs/content-brief.md`.
 - Removed unconfirmed direct-hire/confidentiality service promises; no new sectors, outcomes, experience claims, testimonials, or guarantees were added.
 - Added canonical/Open Graph metadata for the current Vercel hostname. Update these deliberately if the custom domain is launched.
 - Founder introduction is factual, not a fabricated biography. Original vector logo, headshot, and approved public proof points remain content opportunities.
-- Local verification: nine viewport widths (320–1920), no-JS mobile/desktop, link destinations, navigation/keyboard behavior, reduced motion, and text-contrast audit passed. Final deployment evidence lives in the review record.
+- Local verification: nine viewport widths (320–1920), no-JS mobile/desktop, link destinations, navigation/keyboard behavior, reduced motion, and text-contrast audit passed. Production passed the same checks, with byte-for-byte source verification. Deployment evidence lives in the review record.
